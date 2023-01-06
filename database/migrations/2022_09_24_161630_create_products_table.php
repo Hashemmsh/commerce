@@ -19,7 +19,7 @@ return new class extends Migration
             $table->text('content');
             $table->string('image');
             $table->double('price');
-            $table->double('sale_price')->default(0);
+            $table->double('sale_price')->nullable();
             $table->integer('quantity');
             $table->foreignId('user_id');
             $table->foreignId('category_id');
